@@ -1,0 +1,226 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul,li,p,ol,h1,h2,h3,h4,h5,h6,
+form,label,dl,dt,dd,header,footer,nav,section,aside,dialog,details,
+figure,figcaption,hgroup,article,main,summary{
+	display:block;
+}
+ul,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	outline: 0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+/*清除浮动*/
+.clearfix:after{
+	display:block;
+	height:0;
+	content:'';
+	visibility:hidden;
+	clear:both;
+}
+/*左右浮动*/
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+/*文本截断*/
+.text-ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.text-ellipsis2{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+}
+.text-ellipsis3{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp:3;
+	-webkit-box-orient:vertical;
+}
+/*文本对齐方式 */
+.text-left{
+	text-align:left;
+}
+.text-center{
+	text-align:center;
+}
+.text-right{
+	text-align:right;
+}
+.text-top{
+	vertical-align: top;
+}
+.text-middle{
+	vertical-align:middle;
+}
+.text-bottom{
+	vertical-align:bottom;
+}
+/*加粗  变轻*/
+.fw{
+	font-weight: bold;
+}
+.fn{
+	font-weight: normal;
+}
+/*相对定位*/
+.pr{
+	position:relative;
+}
+.pa{
+	position:absolute;
+}
+/*元素水平居中*/
+.position-x{
+	position:absolute;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	transform:translateX(-50%);
+}
+/*元素垂直居中*/
+.position-y{
+	position:absolute;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.position-x-y{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+.whr100{
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.wha100{
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/*字体大小*/
+.fs12{
+	font-size: 12px;
+}
+.fs14{
+	font-size: 14px;
+}
+.fs16{
+	font-size: 16px;
+}
+.fs18{
+	font-size: 18px;
+}
+.fs20{
+	font-size: 20px;
+}
+.fs22{
+	font-size: 22px;
+}
+.fs24{
+	font-size: 24px;
+}
+/*元素隐藏*/
+.hide{
+	display:none;
+}
+/*元素显示*/
+.show{
+	display:block;
+}
+/*border-radius*/
+.br{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+/*img*/
+img {
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%;
+}
+/*a*/
+a:active,
+a:hover {
+	outline: 0;
+}
+/*禁止用户选中*/
+body{
+	user-select: none;
+}
+/*scrollbar*/
+body::-webkit-scrollbar{
+	width: 10px;
+	background: #e1edf7;
+}
+body::-webkit-scrollbar-thumb{
+	background-color: #667189;
+	border-radius: 5px;
+}
+body::-webkit-scrollbar-button:start {
+	background: url("../images/btn-bottom.png") no-repeat center center;
+	background-size: 7px 7px;
+}
+
+body::-webkit-scrollbar-button:end {
+	background: url("../images/btn-top.png") no-repeat center center;
+	background-size: 7px 7px;
+
+}
+/*仿照bootstrap*/
+.container{
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.container .row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.container .row > div{
+	float: left;
+}
+.col-3{
+	width:25%;
+}
+.col-4{
+	width: 33.33333333%;
+}
+.col-8{
+	width: 66.66666667%;
+}
+@media (min-width:1200px){
+	.container{
+		width: 1170px;
+	}
+}
